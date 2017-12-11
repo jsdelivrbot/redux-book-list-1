@@ -1,14 +1,14 @@
 import React from 'react';
+import BookDetail from '../containers/BookDetail';
 import BookList from '../containers/BookList';
 
-class App extends React.Component {
-  render() {
-    return (
-      <div>
-        <BookList />
-      </div>
-    );
-  }
+function App() {
+  return (
+    <div>
+      <BookList />
+      <BookDetail />
+    </div>
+  );
 }
 
 export default App;
