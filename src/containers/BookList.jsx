@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 
-class BookListContainer extends React.Component {
+class BookList extends React.Component {
   renderList() {
     return this.props.books.map(book => (
       <li
@@ -28,4 +28,4 @@ function mapStateToProps(state) {
   };
 }
 
-export default connect(mapStateToProps)(BookListContainer);
+export default connect(mapStateToProps)(BookList);
